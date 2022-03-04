@@ -15,20 +15,20 @@
 
 function palindrome(str) {
     // Напишите код здесь
-    const arrayPunctuation = ['.',',',';',':','?','!','-','[',']','(',')','<<','>>',' '];
-    let array=str.split('');
-    for(let i=0;i<arrayPunctuation.length;i++){
-        for(let j=0;j<array.length;j++){
-            if(array[j]===arrayPunctuation[i]){
-                array.splice(j,1);
+    const arrayPunctuation = ['.', ',', ';', ':', '?', '!', '-', '[', ']', '(', ')', '<<', '>>', ' '];
+    const arrayLetters = str.split('');
+    for (let i = 0; i < arrayPunctuation.length; i++) {
+        for (let j = 0; j < arrayLetters.length; j++) {
+            if (arrayLetters[j] === arrayPunctuation[i]) {
+                arrayLetters.splice(j, 1);
             }
         }
     };
-    str=array.join('');
-    if(str.toLowerCase() === array.reverse().join('').toLowerCase()){
+    str = arrayLetters.join('');
+    if (str.toLowerCase() === arrayLetters.reverse().join('').toLowerCase()) {
         return true;
     }
-    else{
+    else {
         return false;
     }
 }

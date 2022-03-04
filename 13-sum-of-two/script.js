@@ -10,11 +10,11 @@
 
 function sumOfTwo(arr, sum) {
     // Напишите код здесь
-    let isSum=false;
-    for(let i=0;i<arr.length;i++){
-        for(let j=i+1;j<arr.length;j++){
-            if(arr[i]+arr[j]===sum){
-                isSum=true;
+    let isSum = false;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === sum) {
+                isSum = true;
                 break;
             }
         }

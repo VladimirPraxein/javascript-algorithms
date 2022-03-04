@@ -10,8 +10,8 @@
 
 function reverseWords(str) {
     // Напишите код здесь
-    arrayStr=str.split(' ').reverse();
-    return str=arrayStr.join(' ');
+    arrayReverse = str.split(' ').reverse();
+    return str = arrayReverse.join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -10,14 +10,14 @@
 
 function anagram(str1, str2) {
     // Напишите код здесь
-    const arrStr=str1.toLowerCase().split('');
-    if(str1.length===str2.length && str1.toLowerCase()!==str2.toLowerCase()){
-        const anagram=arrStr.every(function(item){
+    const arrayLetters = str1.toLowerCase().split('');
+    if (str1.length === str2.length && str1.toLowerCase() !== str2.toLowerCase()) {
+        const anagram = arrayLetters.every(function (item) {
             return str2.toLowerCase().includes(item);
         });
         return anagram;
     }
-    else{
+    else {
         return false;
     }
 }

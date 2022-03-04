@@ -11,16 +11,16 @@
 
 function findVowels(str) {
     // Напишите код здесь
-    const arrLetters=['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
-    let a=0;
-    str.toLowerCase().split('').forEach(function(item){
-        for(let i=0;i<arrLetters.length;i++){
-            if(item===arrLetters[i]){
-                a=a+1;
+    const arrayLetters = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+    let counter = 0;
+    str.toLowerCase().split('').forEach(function (item) {
+        for (let i = 0; i < arrayLetters.length; i++) {
+            if (item === arrayLetters[i]) {
+                counter = counter + 1;
             }
         }
     });
-    return a;
+    return counter;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

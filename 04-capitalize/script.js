@@ -8,11 +8,11 @@
 
 function capitalize(str) {
     // Напишите код здесь
-    const strArray=str.split(' ');
-    for(let i=0;i<strArray.length;i++){
-        strArray[i]=strArray[i].slice(0,1).toUpperCase()+strArray[i].slice(1);
+    const arrayLetters = str.split(' ');
+    for (let i = 0; i < arrayLetters.length; i++) {
+        arrayLetters[i] = arrayLetters[i].slice(0, 1).toUpperCase() + arrayLetters[i].slice(1);
     }
-    return str=strArray.join(' ');  
+    return str = arrayLetters.join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

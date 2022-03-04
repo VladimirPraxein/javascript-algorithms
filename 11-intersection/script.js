@@ -9,15 +9,15 @@
 
 function intersection(arr1, arr2) {
     // Напишите код здесь
-    const arr3=[];
-    for(let i=0;i<arr1.length;i++){
-        for(let j=0;j<arr2.length;j++){
-            if(arr1[i]===arr2[j] && i===arr1.lastIndexOf(arr1[i]) && j===arr2.lastIndexOf(arr2[j])){
-                arr3.push(arr2[j]);
+    const arrayIntersection = [];
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j] && i === arr1.lastIndexOf(arr1[i]) && j === arr2.lastIndexOf(arr2[j])) {
+                arrayIntersection.push(arr2[j]);
             }
         }
     };
-    return arr3;
+    return arrayIntersection;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -11,22 +11,22 @@
 
 function isPrime(n) {
     // Напишите код здесь
-    let isPrime=true;
-    if(n>2){
-        for(let i=2;i<n;i++){
-            if(n%i===0){
-                isPrime=false;
+    let isPrime = true;
+    if (n > 2) {
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                isPrime = false;
                 break;
             }
         }
         return isPrime;
     }
-    else if(n===2){
+    else if (n === 2) {
         return true;
     }
-    else{
+    else {
         return false;
-    } 
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -10,15 +10,15 @@
 
 function fibonacci(n) {
     // Напишите код здесь
-    let a=0;
-    let b=1;
-    let c;
-    for(let i=0;i<n-1;i++){
-        c=a+b;
-        a=b;
-        b=c;
+    let firstValue = 0;
+    let secondValue = 1;
+    let thirdValue;
+    for (let i = 0; i < n - 1; i++) {
+        thirdValue = firstValue + secondValue;
+        firstValue = secondValue;
+        secondValue = thirdValue;
     }
-    return a;
+    return firstValue;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
