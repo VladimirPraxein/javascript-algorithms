@@ -8,6 +8,21 @@
 
 function primes(num) {
     // Напишите код здесь
+    const arr=[];
+    
+    for(let i=2;i<=num;i++){
+        arr.push(i);
+    }
+    const arrPrime=arr.filter(function(item){
+        let isPrime=true;
+        for(let i=2;i<item;i++){
+            if(item%i===0){
+                isPrime=false;
+            }
+        }
+        return isPrime;
+    });
+    return arrPrime;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

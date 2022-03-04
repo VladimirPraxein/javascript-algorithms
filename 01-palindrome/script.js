@@ -15,14 +15,29 @@
 
 function palindrome(str) {
     // Напишите код здесь
+    const arrayPunctuation = ['.',',',';',':','?','!','-','[',']','(',')','<<','>>',' '];
+    let array=str.split('');
+    for(let i=0;i<arrayPunctuation.length;i++){
+        for(let j=0;j<array.length;j++){
+            if(array[j]===arrayPunctuation[i]){
+                array.splice(j,1);
+            }
+        }
+    };
+    str=array.join('');
+    if(str.toLowerCase() === array.reverse().join('').toLowerCase()){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
-
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
-
+console.log(palindrome('О, лета тело!')); // true
 /*
  * Бонус. Задача для любознательных. Пусть функция принимает на вход любую строку,
  * но пробелы и знаки препинания не учитывает. Например:
