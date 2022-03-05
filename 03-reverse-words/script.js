@@ -10,7 +10,7 @@
 
 function reverseWords(str) {
     // Напишите код здесь
-    arrayReverse = str.split(' ').reverse();
+    const arrayReverse = str.split(' ').reverse();
     return str = arrayReverse.join(' ');
 }
 

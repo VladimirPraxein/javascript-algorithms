@@ -13,7 +13,7 @@ function isPrime(n) {
     // Напишите код здесь
     let isPrime = true;
     if (n > 2) {
-        for (let i = 2; i < n; i++) {
+        for (let i = 2; i < (n * 0.5 + 1); i++) {
             if (n % i === 0) {
                 isPrime = false;
                 break;

@@ -15,7 +15,7 @@ function primes(num) {
     }
     const arrayPrime = arrayNumbers.filter(function (item) {
         let isPrime = true;
-        for (let i = 2; i < item; i++) {
+        for (let i = 2; i < (item * 0.5 + 1); i++) {
             if (item % i === 0) {
                 isPrime = false;
             }
